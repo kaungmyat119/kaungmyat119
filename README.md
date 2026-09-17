@@ -28,17 +28,13 @@ Currently going deep on **distributed systems**, **database internals**, and **o
 
 ### Projects
 
-**[Ride-Hailing Platform](YOUR_REPO_URL)** — a full ride-hailing backend, built solo to production standards.
+**[Ride-Hailing Platform]** — a full ride-hailing backend, built solo to production standards.
 
 > Modular monolith with a transactional outbox for reliable event delivery, idempotent request handling, explicit state machines for the trip lifecycle, PostGIS-backed driver matching, and BullMQ workers behind a Socket.IO real-time layer. Containerized and shipped through CI.
 
 `NestJS` `PostgreSQL` `PostGIS` `Redis` `BullMQ` `Socket.IO` `Flutter` `Docker`
 
-**[ScopeGuard](YOUR_REPO_URL)** — detects scope creep in freelance projects by embedding requirements and flagging drift against the original agreement.
-
-`Next.js` `TypeScript` `PostgreSQL` `pgvector`
-
-**[Spotify Statistics](YOUR_REPO_URL)** — listening-history analytics built on the Spotify Web API.
+**[Spotify Statistics]** — listening-history analytics built on the Spotify Web API.
 
 `Next.js` `TypeScript` `Spotify API`
 
