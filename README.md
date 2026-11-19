@@ -28,11 +28,17 @@ Currently going deep on **distributed systems**, **database internals**, and **o
 
 ### Projects
 
-**[Ride-Hailing Platform]** — a full ride-hailing backend, built solo to production standards.
+**[One Kilo Taxi]** — a full-stack ride-hailing and taxi dispatch platform, with a focus on backend architecture, reliability, and financial correctness.
 
-> Modular monolith with a transactional outbox for reliable event delivery, idempotent request handling, explicit state machines for the trip lifecycle, PostGIS-backed driver matching, and BullMQ workers behind a Socket.IO real-time layer. Containerized and shipped through CI.
+> Designed around a modular monolith architecture, with independently runnable API and worker processes. Built a transactional outbox for reliable event delivery, idempotent event processing, and concurrency-safe operations using PostgreSQL transactions, row-level locks, and database constraints.
+>
+> Implemented a ride lifecycle state machine, geospatial driver matching with PostGIS and Redis GEO, real-time communication through Socket.IO, and asynchronous background processing with BullMQ.
+>
+> Developed a double-entry wallet and payment ledger with database-enforced accounting invariants, immutable financial records, and integer-based monetary calculations. Also implemented role-based authorization, JWT authentication with refresh-token rotation, audit logging, and privacy controls for ride-related data.
+>
+> Established automated testing across unit, integration, and end-to-end layers, alongside structured logging, Prometheus metrics, health checks, and error monitoring.
 
-`NestJS` `PostgreSQL` `PostGIS` `Redis` `BullMQ` `Socket.IO` `Flutter` `Docker`
+`TypeScript` `NestJS` `Fastify` `Prisma` `Zod` `PostgreSQL` `PostGIS` `Redis` `BullMQ` `Socket.IO` `Flutter` `Next.js` `Docker` `NGINX` `GitHub Actions`
 
 **[Spotify Statistics]** — listening-history analytics built on the Spotify Web API.
 
